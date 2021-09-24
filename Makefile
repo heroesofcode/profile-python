@@ -4,6 +4,6 @@ setup: ## Dependencies
 	pip install pytest
 	pip install pytest-cov
 
-tests: ## Run tests and
+test: ## Run tests
 	pytest
-	pytest --cov=profile_python tests/
+	pytest --cov=profile_python
