@@ -1,4 +1,3 @@
 setup: ## Install dependencies
-	poetry update
-	poetry config virtualenvs.in-project true
-	poetry install
+	python -m pip install --upgrade pip
+        pip install setuptools wheel twine
