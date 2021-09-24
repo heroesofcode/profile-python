@@ -1,8 +1,10 @@
 from profile_python.networking import Networking
 from profile_python.endpoint import Endpoint
 
-url_data = Endpoint().data("joaolfp")
-url_repo = Endpoint().repo("joaolfp")
+user = input("Enter your username: ")
+
+url_data = Endpoint().data(user)
+url_repo = Endpoint().repo(user)
 
 networking = Networking()
 response_datas = networking.request(url_data)
@@ -32,5 +34,7 @@ option = input("Choose an option: ")
 
 if option == "1":
     get_datas(values_datas)
-else:
+elif option == "2":
     get_repos(values_repos)
+else:
+    print("This option does not exist")
