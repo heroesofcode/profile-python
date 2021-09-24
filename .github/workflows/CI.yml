@@ -23,3 +23,6 @@ jobs:
         
     - name: Install dependencies
       run: make setup
+
+    - name: Run tests
+      run: make test
