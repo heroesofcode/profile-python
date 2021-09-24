@@ -6,4 +6,4 @@ setup: ## Dependencies
 
 test: ## Run tests
 	pytest
-	pytest --cov=profile_python
+	pytest --cov=profile_python tests/
