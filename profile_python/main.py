@@ -1,10 +1,11 @@
 from profile_python.networking import Networking
+from profile_python.endpoint import Endpoint
 
-url = "https://api.github.com/users/joaolfp"
-url_repo = "https://api.github.com/users/joaolfp/repos"
+url_data = Endpoint().data("joaolfp")
+url_repo = Endpoint().repo("joaolfp")
 
 networking = Networking()
-response_datas = networking.request(url)
+response_datas = networking.request(url_data)
 response_repos = networking.request(url_repo)
 
 values_datas = networking.parsing(response_datas)

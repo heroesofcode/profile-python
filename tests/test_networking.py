@@ -1,7 +1,6 @@
 import unittest
 from profile_python.networking import Networking
 
-
 class TestNetworking(unittest.TestCase):
 
     def test_request_success(self):
@@ -13,7 +12,7 @@ class TestNetworking(unittest.TestCase):
         response = networking.request(url)
         assert response == json
 
-    def test_passing_success(self):
+    def test_parsing_success(self):
         url = "https://api.chucknorris.io/jokes/categories"
         networking = Networking()
         response = networking.request(url)
