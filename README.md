@@ -2,6 +2,7 @@
 
 [![CI](https://github.com/joaolfp/profile-python/actions/workflows/CI.yml/badge.svg)](https://github.com/joaolfp/profile-python/actions/workflows/CI.yml)
 [![codecov](https://codecov.io/gh/joaolfp/profile-python/branch/master/graph/badge.svg?token=TDUTA1UY6N)](https://codecov.io/gh/joaolfp/profile-python)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/joaolfp/profile-python)](https://github.com/joaolfp/profile-python/releases)
 [![GitHub](https://img.shields.io/github/license/joaolfp/profile-python)](https://github.com/joaolfp/profile-python/blob/master/LICENSE)
 
 ## Overview
