@@ -1,5 +1,7 @@
 from profile_python.networking import Networking
 from profile_python.endpoint import Endpoint
+from rich.console import Console
+from rich.table import Table
 
 user = input("Enter your username: ")
 
@@ -23,7 +25,21 @@ def get_datas(datas):
 
 def get_repos(repos):
     for repo in repos:
-        print(repo['name'])
+        console = Console()
+        table = Table(show_header=True, header_style="bold magenta")
+        table.add_column("Name Repository", style="bold red")
+        table.add_column("Language")
+        table.add_column("Forks")
+        table.add_column("Stars")
+
+        table.add_row(
+            repo['name'],
+            repo['language'],
+            str(repo['forks_count']),
+            str(repo['stargazers_count'])
+        )
+
+        console.print(table)
 
 print("1 - My datas")
 print("2 - Repositories")
