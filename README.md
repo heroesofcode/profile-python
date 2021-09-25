@@ -1,6 +1,7 @@
 # Profile Python
 
 [![CI](https://github.com/joaolfp/profile-python/actions/workflows/CI.yml/badge.svg)](https://github.com/joaolfp/profile-python/actions/workflows/CI.yml)
+[![codecov](https://codecov.io/gh/joaolfp/profile-python/branch/master/graph/badge.svg?token=TDUTA1UY6N)](https://codecov.io/gh/joaolfp/profile-python)
 
 ## Overview
 Profile python is a script for you to view your data and github repositories.
