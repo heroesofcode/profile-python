@@ -11,7 +11,7 @@ Profile python is a script for you to view your data and github repositories.
 ## What to use?
 You can download or clone this repository and run main.
 
-<img src="https://github.com/joaolfp/profile-python/blob/master/.github/assets/example-repo.gif" width="700px" height="500px">
+<img src="https://github.com/joaolfp/profile-python/blob/master/.github/assets/example-repo.gif" width="700px" height="520px">
 
 ## Author
 Coded by [João Lucas](https://github.com/joaolfp)
