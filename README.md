@@ -8,9 +8,12 @@
 ## Overview
 Profile python is a script for you to view your data and github repositories.
 
-## What to use?
-You can download or clone this repository and run main.
+## Installing
+```
+python -m profile_python
+```
 
+## What to use?
 <img src="https://github.com/joaolfp/profile-python/blob/master/.github/assets/example-repo.gif" width="550px" height="700px">
 
 ## Author
