@@ -17,7 +17,7 @@ python3 -m pip install profile-python
 
 After installing build on terminal:
 ```
-python -m profile_python
+python3 -m profile_python
 ```
 
 ## What to use?
