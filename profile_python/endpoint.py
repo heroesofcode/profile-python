@@ -1,9 +1,11 @@
+path = "https://api.github.com/users/"
+
 class Endpoint(object):
 
     def data(self, user):
-        url = "https://api.github.com/users/" + str(user)
+        url = path + str(user)
         return url
 
     def repo(self, user):
-        url = "https://api.github.com/users/" + str(user) + "/repos"
+        url = path + str(user) + "/repos"
         return url
