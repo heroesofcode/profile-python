@@ -5,7 +5,9 @@ from rich.table import Table
 
 if __name__ == "__main__":
 
-    print("🏠 Welcome, write your GitHub user to see their profile and repositories 🔥")
+    console = Console()
+
+    console.print("🏠 Welcome, write your GitHub user to see their profile and repositories 🔥", style="#FFFF00")
     user = input("Enter your username: ")
 
     url_data = Endpoint().data(user)
@@ -30,7 +32,6 @@ if __name__ == "__main__":
 
     def get_repos(repos):
         for repo in repos:
-            console = Console()
             table = Table(show_header=True, header_style="bold magenta")
             table.add_column("Name Repository", style="bold red")
             table.add_column("Language")
