@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="profile-python",
-    version="0.0.3",
+    version="0.0.4",
     author="João Lucas",
     author_email="joaolucasfp2001@gmail.com",
     description="Profile python is a script for you to view your data and github repositories.",

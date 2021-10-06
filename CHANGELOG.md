@@ -3,6 +3,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## Version 0.0.4
+**2021-10-06**
+
+- Now the system has a new layout
+
 ## Version 0.0.3
 **2021-10-04**
 
