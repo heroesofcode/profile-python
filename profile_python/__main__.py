@@ -4,6 +4,8 @@ from rich.console import Console
 from rich.table import Table
 
 if __name__ == "__main__":
+
+    print("🏠 Welcome, write your GitHub user to see their profile and repositories 🔥")
     user = input("Enter your username: ")
 
     url_data = Endpoint().data(user)
@@ -44,6 +46,7 @@ if __name__ == "__main__":
 
             console.print(table)
 
+    print("-----------------------------------------------")
 
     print("1 - My datas")
     print("2 - Repositories")
