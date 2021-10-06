@@ -2,10 +2,14 @@ from profile_python.networking import Networking
 from profile_python.endpoint import Endpoint
 from rich.console import Console
 from rich.table import Table
+import pyfiglet
 
 if __name__ == "__main__":
 
     console = Console()
+
+    ascii_banner = pyfiglet.figlet_format("Profile GitHub")
+    print(ascii_banner)
 
     console.print("🏠 Welcome, write your GitHub user to see their profile and repositories 🔥", style="#FFFF00")
     user = input("Enter your username: ")

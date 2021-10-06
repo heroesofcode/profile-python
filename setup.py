@@ -20,7 +20,8 @@ setuptools.setup(
     ],
     install_requires=[
         'rich',
-        'requests'
+        'requests',
+        'pyfiglet'
     ],
     project_urls={
         'Homepage': 'https://github.com/heroesofcode/profile-python',
