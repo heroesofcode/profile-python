@@ -24,7 +24,6 @@ if __name__ == "__main__":
     values_datas = networking.parsing(response_datas)
     values_repos = networking.parsing(response_repos)
 
-
     def get_datas(datas):
         print(datas['login'])
         print(datas['name'])
@@ -32,7 +31,6 @@ if __name__ == "__main__":
         print(datas['company'])
         print(datas['blog'])
         print(datas['location'])
-
 
     def get_repos(repos):
         for repo in repos:
