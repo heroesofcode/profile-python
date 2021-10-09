@@ -3,6 +3,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## Version 0.1.4
+**2021-10-08**
+
+- Rich update version
+- Now you don't need to run the application every time
+- Option to exit the application
+
 ## Version 0.0.4
 **2021-10-06**
 
