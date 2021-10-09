@@ -3,6 +3,7 @@ from profile_python.endpoint import Endpoint
 from rich.console import Console
 from rich.table import Table
 import pyfiglet
+import sys
 
 if __name__ == "__main__":
 
@@ -35,7 +36,7 @@ if __name__ == "__main__":
     def get_repos(repos):
         for repo in repos:
             table = Table(show_header=True, header_style="bold magenta")
-            table.add_column("Name Repository", style="bold red")
+            table.add_column("Name Repository")
             table.add_column("Language")
             table.add_column("Forks")
             table.add_column("Stars")
@@ -49,18 +50,28 @@ if __name__ == "__main__":
 
             console.print(table)
 
-    print("-----------------------------------------------")
+    def exist_application():
+        option_exist = input("Do you really want to exit the system? y/n: ")
 
-    print("1 - My datas")
-    print("2 - Repositories")
+        if option_exist == "y":
+            sys.exit()
 
-    print("-----------------------------------------------")
+    while True:
+        print("-----------------------------------------------")
 
-    option = input("Choose an option: ")
+        print("1 - My datas")
+        print("2 - Repositories")
+        print("3 - Exist")
 
-    if option == "1":
-        get_datas(values_datas)
-    elif option == "2":
-        get_repos(values_repos)
-    else:
-        print("This option does not exist")
+        print("-----------------------------------------------")
+
+        option = input("Choose an option: ")
+
+        if option == "1":
+            get_datas(values_datas)
+        elif option == "2":
+            get_repos(values_repos)
+        elif option == "3":
+            exist_application()
+        else:
+            print("This option does not exist")
