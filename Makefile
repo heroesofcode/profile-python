@@ -4,7 +4,7 @@ setup: ## Dependencies
 	poetry config virtualenvs.in-project true
 
 test: ## Run tests
-	poetry run pytest --cov=profile_python tests/
+	poetry run pytest -vv --cov-report=xml --cov=profile_python tests/
 
 setup_deploy: ## Dependencies deploy
 	python -m pip install --upgrade pip
