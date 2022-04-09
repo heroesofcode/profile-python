@@ -5,7 +5,7 @@ description = ""
 authors = ["João Lucas <joaolucasfp2001@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.10"
 rich = "^12.2.0"
 requests = "^2.27.1"
 pyfiglet = "^0.8.post1"
