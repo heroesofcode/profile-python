@@ -1,12 +1,10 @@
 setup: ## Dependencies
-	python -m pip install --upgrade pip
-	pip install setuptools wheel twine
-	pip install pytest
-	pip install pytest-cov
+	poetry update
+	poetry install
+	poetry config virtualenvs.in-project true
 
 test: ## Run tests
-	pytest
-	pytest --cov=profile_python tests/
+	poetry run pytest -vv --cov-report=xml --cov=bitrise_reports tests/
 
 setup_deploy: ## Dependencies deploy
 	python -m pip install --upgrade pip
