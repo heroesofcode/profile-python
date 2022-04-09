@@ -6,6 +6,7 @@ authors = ["João Lucas <joaolucasfp2001@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+rich = "^12.2.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
