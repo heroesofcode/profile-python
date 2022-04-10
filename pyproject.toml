@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "profile_python"
+version = "0.1.0"
+description = ""
+authors = ["João Lucas <joaolucasfp2001@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+rich = "^12.2.0"
+requests = "^2.27.1"
+pyfiglet = "^0.8.post1"
+pytest-cov = "^3.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
