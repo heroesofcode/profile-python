@@ -1,8 +1,17 @@
 [tool.poetry]
-name = "profile_python"
-version = "0.1.0"
-description = ""
+name = "profile-python"
+version = "0.2.0"
+description = "Profile python is a script for you to view your data and github repositories."
 authors = ["João Lucas <joaolucasfp2001@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/heroesofcode/profile-python"
+repository = "https://github.com/heroesofcode/profile-python"
+include = [ "LICENSE.md" ]
+classifiers = [
+    "Environment :: Console",
+    "Operating System :: OS Independent"
+]
 
 [tool.poetry.dependencies]
 python = "^3.8"

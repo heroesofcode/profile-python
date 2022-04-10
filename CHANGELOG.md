@@ -3,6 +3,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## Version 0.2.0
+**2022-04-09**
+
+- Migrate project to Poetry
+- Library version updates
+
 ## Version 0.1.4
 **2021-10-08**
 
