@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "profile-python"
-version = "0.2.1"
+version = "0.2.2"
 description = "Profile python is a script for you to view your data and github repositories."
 authors = ["João Lucas <joaolucasfp2001@gmail.com>"]
 license = "MIT"
@@ -22,6 +22,9 @@ pytest-cov = "^3.0.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.1"
+
+[tool.poetry.scripts]
+profile-python = "profile-python=profile_python.__main__:main'"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
