@@ -5,27 +5,27 @@ from rich.table import Table
 import pyfiglet
 import sys
 
-if __name__ == "__main__":
+console = Console()
 
-    console = Console()
+ascii_banner = pyfiglet.figlet_format("Profile GitHub")
+print(ascii_banner)
 
-    ascii_banner = pyfiglet.figlet_format("Profile GitHub")
-    print(ascii_banner)
+console.print("🏠 Welcome, write your GitHub user to see their profile and repositories 🔥", style="#FFFF00")
+user = input("Enter your username: ")
 
-    console.print("🏠 Welcome, write your GitHub user to see their profile and repositories 🔥", style="#FFFF00")
-    user = input("Enter your username: ")
+url_data = Endpoint().data(user)
+url_repo = Endpoint().repo(user)
 
-    url_data = Endpoint().data(user)
-    url_repo = Endpoint().repo(user)
+networking = Networking()
+response_datas = networking.request(url_data)
+response_repos = networking.request(url_repo)
 
-    networking = Networking()
-    response_datas = networking.request(url_data)
-    response_repos = networking.request(url_repo)
+values_datas = networking.parsing(response_datas)
+values_repos = networking.parsing(response_repos)
 
-    values_datas = networking.parsing(response_datas)
-    values_repos = networking.parsing(response_repos)
+class Profile(object):
 
-    def get_datas(datas):
+    def get_datas(self, datas):
         print(datas['login'])
         print(datas['name'])
         print(datas['bio'])
@@ -33,7 +33,7 @@ if __name__ == "__main__":
         print(datas['blog'])
         print(datas['location'])
 
-    def get_repos(repos):
+    def get_repos(self, repos):
         for repo in repos:
             table = Table(show_header=True, header_style="bold magenta")
             table.add_column("Name Repository")
@@ -50,28 +50,29 @@ if __name__ == "__main__":
 
             console.print(table)
 
-    def exist_application():
+    def exist_application(self):
         option_exist = input("Do you really want to exit the system? y/n: ")
 
         if option_exist == "y":
             sys.exit()
 
-    while True:
-        print("-----------------------------------------------")
+    def run_app(self):
+        while True:
+            print("-----------------------------------------------")
 
-        print("1 - My datas")
-        print("2 - Repositories")
-        print("3 - Exist")
+            print("1 - My datas")
+            print("2 - Repositories")
+            print("3 - Exist")
 
-        print("-----------------------------------------------")
+            print("-----------------------------------------------")
 
-        option = input("Choose an option: ")
+            option = input("Choose an option: ")
 
-        if option == "1":
-            get_datas(values_datas)
-        elif option == "2":
-            get_repos(values_repos)
-        elif option == "3":
-            exist_application()
-        else:
-            print("This option does not exist")
+            if option == "1":
+                self.get_datas(values_datas)
+            elif option == "2":
+                self.get_repos(values_repos)
+            elif option == "3":
+                self.exist_application()
+            else:
+                print("This option does not exist")
