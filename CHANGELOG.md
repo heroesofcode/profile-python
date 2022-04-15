@@ -3,6 +3,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## Version 0.2.1
+**2022-04-15**
+
+- Fix when doing build
+
 ## Version 0.2.0
 **2022-04-09**
 
