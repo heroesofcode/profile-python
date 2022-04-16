@@ -1,6 +1,7 @@
 import requests
 import json
 
+
 class Networking(object):
 
     def request(self, url):

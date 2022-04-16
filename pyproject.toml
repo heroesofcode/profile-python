@@ -19,6 +19,7 @@ rich = "^12.2.0"
 requests = "^2.27.1"
 pyfiglet = "^0.8.post1"
 pytest-cov = "^3.0.0"
+flake8 = "^4.0.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.1"

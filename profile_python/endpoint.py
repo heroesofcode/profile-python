@@ -1,5 +1,6 @@
 path = "https://api.github.com/users/"
 
+
 class Endpoint(object):
 
     def data(self, user):
