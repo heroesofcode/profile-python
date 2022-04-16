@@ -23,6 +23,7 @@ response_repos = networking.request(url_repo)
 values_datas = networking.parsing(response_datas)
 values_repos = networking.parsing(response_repos)
 
+
 class Profile(object):
 
     def get_datas(self, datas):
