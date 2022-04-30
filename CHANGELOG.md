@@ -3,6 +3,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## Next
+**Date**
+
+- Add progress bar - @joaolfp
+- Add author in header - @joaolfp
+- Bump rich from 12.2.0 to 12.3.0. See #10 - @dependabot
+- Bump pytest from 7.1.1 to 7.1.2. See #9 - @dependabot
+
 ## Version 0.2.3
 **2022-04-15**
 
