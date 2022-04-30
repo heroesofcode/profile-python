@@ -2,6 +2,8 @@ from profile_python.networking import Networking
 from profile_python.endpoint import Endpoint
 from rich.console import Console
 from rich.table import Table
+from rich.progress import track
+from time import sleep
 import pyfiglet
 import sys
 
@@ -11,6 +13,8 @@ ascii_banner = pyfiglet.figlet_format("Profile GitHub")
 print(ascii_banner)
 
 console.print("🏠 Welcome, write your GitHub user to see their profile and repositories 🔥", style="#FFFF00")
+console.print("✍  João Lucas", style="#FFFF00")
+print("\n")
 user = input("Enter your username: ")
 
 url_data = Endpoint().data(user)
@@ -57,6 +61,10 @@ class Profile(object):
         if option_exist == "y":
             sys.exit()
 
+    def process_data(self):
+        for _ in track(range(100), description='[green]Processing data'):
+            sleep(0.02)
+
     def run_app(self):
         while True:
             print("-----------------------------------------------")
@@ -70,8 +78,10 @@ class Profile(object):
             option = input("Choose an option: ")
 
             if option == "1":
+                self.process_data()
                 self.get_datas(values_datas)
             elif option == "2":
+                self.process_data()
                 self.get_repos(values_repos)
             elif option == "3":
                 self.exist_application()
