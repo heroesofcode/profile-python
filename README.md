@@ -15,14 +15,11 @@ Install with pip or your favorite PyPi package manager:
 ```
 python3 -m pip install profile-python
 ```
-
-After installing build on terminal:
+## What to use?
 ```
 python3 -m profile_python
 ```
-
-## What to use?
-<img src="https://github.com/joaolfp/profile-python/assets/example.jpg" width="550px" height="700px">
+<img src="https://github.com/heroesofcode/profile-python/blob/master/assets/example.png" width="700px" height="800px">
 
 ## Author
 Coded by [João Lucas](https://github.com/joaolfp)
