@@ -22,7 +22,7 @@ python3 -m profile_python
 ```
 
 ## What to use?
-<img src="https://github.com/joaolfp/profile-python/blob/master/.github/assets/example-repo.gif" width="550px" height="700px">
+<img src="https://github.com/joaolfp/profile-python/assets/example.jpg" width="550px" height="700px">
 
 ## Author
 Coded by [João Lucas](https://github.com/joaolfp)
