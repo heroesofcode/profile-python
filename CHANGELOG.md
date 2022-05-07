@@ -3,8 +3,8 @@
 
 All notable changes to this project will be documented in this file.
 
-## Next
-**Date**
+## Version 0.3.0
+**2022-05-07**
 
 - Add progress bar - @joaolfp
 - Add author in header - @joaolfp
