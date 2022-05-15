@@ -1,59 +1,45 @@
-from profile_python.networking import Networking
-from profile_python.endpoint import Endpoint
 from rich.console import Console
 from rich.table import Table
 from rich.progress import track
 from time import sleep
-import pyfiglet
 import sys
-
-console = Console()
-
-ascii_banner = pyfiglet.figlet_format("Profile GitHub")
-print(ascii_banner)
-
-console.print("🏠 Welcome, write your GitHub user to see their profile and repositories 🔥", style="#FFFF00")
-console.print("✍  João Lucas", style="#FFFF00")
-print("\n")
-user = input("Enter your username: ")
-
-url_data = Endpoint().data(user)
-url_repo = Endpoint().repo(user)
-
-networking = Networking()
-response_datas = networking.request(url_data)
-response_repos = networking.request(url_repo)
-
-values_datas = networking.parsing(response_datas)
-values_repos = networking.parsing(response_repos)
 
 
 class Profile(object):
 
     def get_datas(self, datas):
-        print(datas['login'])
-        print(datas['name'])
-        print(datas['bio'])
-        print(datas['company'])
-        print(datas['blog'])
-        print(datas['location'])
+        try:
+            print(datas['login'])
+            print(datas['name'])
+            print(datas['bio'])
+            print(datas['company'])
+            print(datas['blog'])
+            print(datas['location'])
+        except:
+            print("This user does not exist")
+            sys.exit()
 
     def get_repos(self, repos):
-        for repo in repos:
-            table = Table(show_header=True, header_style="bold magenta")
-            table.add_column("Name Repository")
-            table.add_column("Language")
-            table.add_column("Forks")
-            table.add_column("Stars")
+        try:
+            for repo in repos:
+                table = Table(show_header=True, header_style="bold magenta")
+                table.add_column("Name Repository")
+                table.add_column("Language")
+                table.add_column("Forks")
+                table.add_column("Stars")
 
-            table.add_row(
-                repo['name'],
-                repo['language'],
-                str(repo['forks_count']),
-                str(repo['stargazers_count'])
-            )
+                table.add_row(
+                    repo['name'],
+                    repo['language'],
+                    str(repo['forks_count']),
+                    str(repo['stargazers_count'])
+                )
 
-            console.print(table)
+                console = Console()
+                console.print(table)
+        except:
+            print("This user does not exist")
+            sys.exit()
 
     def exist_application(self):
         option_exist = input("Do you really want to exit the system? y/n: ")
@@ -65,7 +51,7 @@ class Profile(object):
         for _ in track(range(100), description='[green]Processing data'):
             sleep(0.02)
 
-    def run_app(self):
+    def run_app(self, values_datas, values_repos):
         while True:
             print("-----------------------------------------------")
 

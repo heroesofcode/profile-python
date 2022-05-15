@@ -1,9 +1,9 @@
-from profile_python.profile import Profile
+from profile_python.App import App
 
 
 def main():
-    profile = Profile()
-    profile.run_app()
+    app = App()
+    app.run_app()
 
 
 if __name__ == "__main__":
