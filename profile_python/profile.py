@@ -8,20 +8,24 @@ import sys
 class Profile(object):
 
     def get_datas(self, datas):
+        values = datas
         try:
-            print(datas['login'])
-            print(datas['name'])
-            print(datas['bio'])
-            print(datas['company'])
-            print(datas['blog'])
-            print(datas['location'])
+            print(values['login'])
+            print(values['name'])
+            print(values['bio'])
+            print(values['company'])
+            print(values['blog'])
+            print(values['location'])
         except:
             print("This user does not exist")
             sys.exit()
 
+        return values
+
     def get_repos(self, repos):
+        values = repos
         try:
-            for repo in repos:
+            for repo in values:
                 table = Table(show_header=True, header_style="bold magenta")
                 table.add_column("Name Repository")
                 table.add_column("Language")
@@ -40,6 +44,8 @@ class Profile(object):
         except:
             print("This user does not exist")
             sys.exit()
+
+        return values
 
     def exist_application(self):
         option_exist = input("Do you really want to exit the system? y/n: ")
