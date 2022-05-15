@@ -27,5 +27,5 @@ class App(object):
     values_repos = networking.parsing(response_repos)
 
     def run_app(self):
-        profile = Profile(self.values_datas, self.values_repos)
-        profile.run_app()
+        profile = Profile()
+        profile.run_app(self.values_datas, self.values_repos)

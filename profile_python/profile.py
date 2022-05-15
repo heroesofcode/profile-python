@@ -7,10 +7,6 @@ import sys
 
 class Profile(object):
 
-    def __init__(self, values_datas, values_repos):
-        self.values_datas = values_datas
-        self.values_repos = values_repos
-
     def get_datas(self, datas):
         print(datas['login'])
         print(datas['name'])
@@ -47,7 +43,7 @@ class Profile(object):
         for _ in track(range(100), description='[green]Processing data'):
             sleep(0.02)
 
-    def run_app(self):
+    def run_app(self, values_datas, values_repos):
         while True:
             print("-----------------------------------------------")
 
@@ -61,10 +57,10 @@ class Profile(object):
 
             if option == "1":
                 self.process_data()
-                self.get_datas(self.values_datas)
+                self.get_datas(values_datas)
             elif option == "2":
                 self.process_data()
-                self.get_repos(self.values_repos)
+                self.get_repos(values_repos)
             elif option == "3":
                 self.exist_application()
             else:
