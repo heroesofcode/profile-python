@@ -8,30 +8,38 @@ import sys
 class Profile(object):
 
     def get_datas(self, datas):
-        print(datas['login'])
-        print(datas['name'])
-        print(datas['bio'])
-        print(datas['company'])
-        print(datas['blog'])
-        print(datas['location'])
+        try:
+            print(datas['login'])
+            print(datas['name'])
+            print(datas['bio'])
+            print(datas['company'])
+            print(datas['blog'])
+            print(datas['location'])
+        except:
+            print("This user does not exist")
+            sys.exit()
 
     def get_repos(self, repos):
-        for repo in repos:
-            table = Table(show_header=True, header_style="bold magenta")
-            table.add_column("Name Repository")
-            table.add_column("Language")
-            table.add_column("Forks")
-            table.add_column("Stars")
+        try:
+            for repo in repos:
+                table = Table(show_header=True, header_style="bold magenta")
+                table.add_column("Name Repository")
+                table.add_column("Language")
+                table.add_column("Forks")
+                table.add_column("Stars")
 
-            table.add_row(
-                repo['name'],
-                repo['language'],
-                str(repo['forks_count']),
-                str(repo['stargazers_count'])
-            )
+                table.add_row(
+                    repo['name'],
+                    repo['language'],
+                    str(repo['forks_count']),
+                    str(repo['stargazers_count'])
+                )
 
-            console = Console()
-            console.print(table)
+                console = Console()
+                console.print(table)
+        except:
+            print("This user does not exist")
+            sys.exit()
 
     def exist_application(self):
         option_exist = input("Do you really want to exit the system? y/n: ")
