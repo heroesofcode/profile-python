@@ -1,4 +1,4 @@
-from profile_python.App import App
+from profile_python.app import App
 
 
 def main():
