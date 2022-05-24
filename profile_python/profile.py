@@ -17,7 +17,6 @@ class Profile(object):
             print(datas['location'])
         except:
             print("This user does not exist")
-            sys.exit()
 
     def get_repos(self, repos):
         try:
@@ -39,7 +38,6 @@ class Profile(object):
                 console.print(table)
         except:
             print("This user does not exist")
-            sys.exit()
 
     def exist_application(self):
         option_exist = input("Do you really want to exit the system? y/n: ")
