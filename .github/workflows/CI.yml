@@ -2,25 +2,17 @@ name: CI
 on: [push, pull_request]
 
 jobs:
-  main:
-    strategy:
-      fail-fast: true
-      matrix:
-        os: [macos-latest, windows-latest, ubuntu-latest]
-        python: ['3.9']
+  build:
 
-    runs-on: ${{ matrix.os }}
-    timeout-minutes: 10
+    runs-on: ubuntu-latest
 
     steps:
-      - name: Project checkout
-        uses: actions/checkout@v3
-
-      - name: Setup Python
+      - uses: actions/checkout@v3
+      - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: ${{ matrix.python }}
-
+          python-version: '3.x'
+          
       - name: Install Poetry
         uses: snok/install-poetry@v1.3
         with:
