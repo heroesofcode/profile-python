@@ -15,7 +15,7 @@ Install with pip or your favorite PyPi package manager:
 ```
 python3 -m pip install profile-python
 ```
-## What to use?
+## Usage
 ```
 python3 -m profile_python
 ```
