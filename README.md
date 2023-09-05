@@ -1,7 +1,6 @@
 # Profile Python
 
 [![CI](https://github.com/joaolfp/profile-python/actions/workflows/CI.yml/badge.svg)](https://github.com/joaolfp/profile-python/actions/workflows/CI.yml)
-[![codecov](https://codecov.io/gh/heroesofcode/profile-python/branch/master/graph/badge.svg?token=TDUTA1UY6N)](https://codecov.io/gh/heroesofcode/profile-python)
 [![Flake8](https://img.shields.io/badge/codestyle-flake8-yellow)](https://flake8.pycqa.org/en/latest/)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/joaolfp/profile-python)](https://github.com/joaolfp/profile-python/releases)
 [![PyPI](https://img.shields.io/pypi/v/profile-python)](https://pypi.org/project/profile-python/)
