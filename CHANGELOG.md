@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Version 0.4.0
+**2023-09-04**
+
+- Bump rich from 12.3.0 to 13.5.2. See #58 - @dependabot
+- Bump pytest from 7.1.2 to 7.4.1. See #59 - @dependabot
+
 ## Version 0.3.0
 **2022-05-07**
 
