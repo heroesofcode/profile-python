@@ -232,13 +232,13 @@ files = [
 
 [[package]]
 name = "pyfiglet"
-version = "0.8.post1"
+version = "1.0.0"
 description = "Pure-python FIGlet implementation"
 optional = false
 python-versions = "*"
 files = [
-    {file = "pyfiglet-0.8.post1-py2.py3-none-any.whl", hash = "sha256:d555bcea17fbeaf70eaefa48bb119352487e629c9b56f30f383e2c62dd67a01c"},
-    {file = "pyfiglet-0.8.post1.tar.gz", hash = "sha256:c6c2321755d09267b438ec7b936825a4910fec696292139e664ca8670e103639"},
+    {file = "pyfiglet-1.0.0-py3-none-any.whl", hash = "sha256:975a6349470d1e470212015f13ef10f565de5270e387d9b0bc6330f692791b09"},
+    {file = "pyfiglet-1.0.0.tar.gz", hash = "sha256:506c704ca0f06844660d2cbffad51fc650c2e56b764266ad96e2371a0f6cbf7b"},
 ]
 
 [[package]]
@@ -401,4 +401,4 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8"
-content-hash = "2157a66140f999e552985a35f5d604cebfb02b20cde67d2250bb7365d3d64489"
+content-hash = "567c55f2a5b9a3dd4decbcf17f04ee6320c8748f09ec2ce68be7c310b16ea26e"
