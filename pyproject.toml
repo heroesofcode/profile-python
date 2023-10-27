@@ -17,7 +17,7 @@ classifiers = [
 python = "^3.8"
 rich = "13.5.3"
 requests = "2.31.0"
-pyfiglet = "1.0.2"
+pyfiglet = ">=0.8,<1.1"
 pytest-cov = "4.1.0"
 flake8 = ">=4.0.1,<6.0.0"
 
